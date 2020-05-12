@@ -37,7 +37,7 @@ class App extends Component {
 
   loadWallpapers = () => {
 
-    Axios.get("https://api.unsplash.com/photos/random?count=30&client_id=aRxB0dUdMv7-Is-W1rWuBmbKgtHD3Qc8Tx_FTK94nRc").then(function(response){
+    Axios.get("https://api.unsplash.com/photos/random?count=30&client_id= YOUR UNSPLASH API KEY ").then(function(response){
       console.log(response.data)
       this.setState({images:response.data, isLoading:false})
     }.bind(this))
